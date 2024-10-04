@@ -1,4 +1,4 @@
-//Write all the even numbers in between 1 to 10 without using any loop. Rather. try to use if-else statement.
+//Write all the even numbers in between 1 to 10 without using any loop. Rather, try to use if-else statement.
 #include<stdio.h>
 int main()
 {
@@ -47,5 +47,5 @@ int main()
 }
 /*We have only used "if" statement because if we use "if-else" statement then compiler will get out of the block 
 of "if" as soon as one condition gets true. As a result, it won't check for the next conditions and will only 
-print one value for true condition. To check every condition and to print every value, we have used only "if" statement. Thus, 
-compiler will go through every block of condition and will print every value for true condition.*/
+print one value for the true condition. To check every condition and to print every value, we have used only "if" statement. Thus, 
+compiler will go through every block of condition and will print every value for true conditions.*/
