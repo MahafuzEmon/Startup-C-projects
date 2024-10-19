@@ -8,20 +8,21 @@ int main()
     printf("Your answer: ");
     scanf("%d", &n);
 
-    switch(n)
+    if(n==1)
     {
-    case 1:
         printf("\nCongratulations! You have got 45 points.\n");
-        break;
-    case 2:
+    }
+    else if(n==2)
+    {
         printf("\nCongratulations! You have got 15 points.\n");
-        break;
-    case 3:
+    }
+    else if(n==3)
+    {
         printf("\nCongratulations! You have got 15 points.\n");
-        break;
-    default:
-        printf("\nSorry, you have entered invalid answer.\n");
-        break;
+    }
+    else
+    {
+        printf("\nSorry, you have entered wrong answer.\n");
     }
     return 0;
 }
