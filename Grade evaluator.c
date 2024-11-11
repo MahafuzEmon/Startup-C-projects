@@ -9,27 +9,32 @@
 int main()
 {
     float num;
-    here:
-    printf("Enter your percentage score (In plain number): "); scanf("%f", &num);
-    if(num >=90 && num<=100)
+here:
+    printf("Enter your percentage score (In plain number): ");
+    scanf("%f", &num);
+    if(num>=0 && num<=100) //If there is a condition which we need to check on each and every if-else ladder, then we should add that condition on a central if statement and make a nested if-else statement out of it.
     {
-        printf("CONGRATULATIONS! You have got an A\n");
-    }
-    else if(num >=80 && num<90)
-    {
-        printf("Great! You have got a B\n");
-    }
-    else if(num >=70 && num<80)
-    {
-        printf("Good. You have got a C\n");
-    }
-    else if(num >=60 && num<70)
-    {
-        printf("Well try. You have got a D\n");
-    }
-    else if(num <60 && num>=0)
-    {
-        printf("Sorry. You have got a F. Try better next time.\n");
+
+        if(num >=90)
+        {
+            printf("CONGRATULATIONS! You have got an A\n");
+        }
+        else if(num >=80)
+        {
+            printf("Great! You have got a B\n");
+        }
+        else if(num >=70)
+        {
+            printf("Good. You have got a C\n");
+        }
+        else if(num >=60)
+        {
+            printf("Well try. You have got a D\n");
+        }
+        else
+        {
+            printf("Sorry. You have got a F. Try better next time.\n");
+        }
     }
     else
     {
